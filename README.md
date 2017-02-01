@@ -75,11 +75,13 @@ Laika BOSS has been tested on the latest versions of CentOS and Ubuntu LTS
 
 ### Installing on CentOS
 1. Install framework dependencies:
+
 	```shell
 	sudo yum install -y epel-release
 	sudo yum install -y autoconf automake libtool libffi-devel python-devel python-pip python-zmq ssdeep-devel swig openssl-devel perl-devel
-```
+	```
 2. Install Python modules
+
 	```shell
 	pip install IPy cffi interruptingcow fluent-logger javatools m2crypto olefile pylzma pyclamd py-unrar2 pexpect
 	pip install six --upgrade --force-reinstall
@@ -94,6 +96,7 @@ Laika BOSS has been tested on the latest versions of CentOS and Ubuntu LTS
 
 4. Install pyexif
 	pyexif is a Python library to communicate with the ExifTool command-line application. Install ExifTool application following instructions at http://www.sno.phy.queensu.ca/~phil/exiftool/install.html#Unix.
+	
 	```shell
 	wget https://github.com/smarnach/pyexiftool/archive/master.zip
 	unzip master.zip
@@ -102,6 +105,7 @@ Laika BOSS has been tested on the latest versions of CentOS and Ubuntu LTS
 	```
 
 5. Install pefile
+	
 	```shell
 	wget https://github.com/erocarrera/pefile/archive/master.zip
 	unzip master.zip
