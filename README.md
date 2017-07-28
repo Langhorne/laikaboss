@@ -87,7 +87,7 @@ Full instructions are available in the [Wiki](https://github.com/lmco/laikaboss/
 
 The Laika BOSS milter server allows you to integrate Laika BOSS with mail transfer agents such as Sendmail or Postfix. This enables better visibility (passive visibility can be hampered by TLS) and provides a means to block email according to Laika BOSS disposition.
 
-For more details, please see the [Wiki](https://github.com/lmco/laikaboss/wiki).
+For more details, please see the [Wiki](https://github.com/lmco/laikaboss/wiki/Install-Instructions:--Milter).
 
 
 #### Suricata Integration Prototype
@@ -96,7 +96,7 @@ We have released a proof of concept feature for Suricata that allows it to store
 
 Once you've enabled file extraction and the optional Redis integration in Suricata, you can extract these files from Redis and submit them to Laika BOSS for scanning by using the middleware script `laika_redis_client.py.`
 
-For more details, please see the [Wiki](https://github.com/lmco/laikaboss/wiki).
+For more details, please see the [Wiki](https://github.com/lmco/laikaboss/wiki/Install-Instructions:--Suricata-Integration-Prototype).
 
 
 ## Licensing
