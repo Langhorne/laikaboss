@@ -33,10 +33,10 @@ Each scan does three main actions on each object:
 
 + **Add metadata** Discover as much information describing the object for future analysis.
 
-## Example Usecases
+## Example Use Cases
 The best way to introduce Laika BOSS is to give several examples of its use.
 
-In example one, you feed Laika an email with Office document (OLE) attachment. Laika will parse the contents of the email and extract all of the message objects. In this case, it extracts a plain text object and an Office Word attachment. Before moving on, it generates metadata about the email (e.g. email addreses, IPs, domains, etc.). Next Laika moves on and determines that the Word document is in OLE format so it extracts the OLE streams. In one one of the streams, a VBA macro is discoverd so Laika extracts that too. All objects feed into and extracted by Laika are scanned by Yara and ClamAV. The conclusion is an output of the scan results and collected metadata in JSON format. Optionally, Laika will place the extracted contents into a folder for manual review.
+In example one, you feed Laika an email with a Office document (OLE) attachment. Laika will parse the contents of the email and extract all of the message objects. In this case, it extracts a plain text object, an HTML object, and an Office Word attachment. Before moving on, it generates metadata about the email (e.g. email addreses, IPs, domains, etc.). Next Laika moves on and determines that the Word document is in OLE format so it extracts the OLE streams. In one one of the streams, a VBA macro is discoverd so Laika extracts that too. All objects feed into and extracted by Laika are scanned by Yara and ClamAV. The conclusion is an output of the scan results and collected metadata in JSON format. Optionally, Laika will place the extracted contents into a folder for manual review.
 
 ```
  +------------------------------------------+
@@ -57,6 +57,8 @@ In example two, you feed Laika a ZIP file. Laika extracts the single item from t
  +-----------------------------------------------+          |  Extracted objects (optional) |
                                                             +-------------------------------+
 ```
+
+For detailed use cases, please see See the [Wiki](https://github.com/lmco/laikaboss/wiki/Use-Cases-and-Examples).
 
 ## Components
 
